@@ -1,6 +1,6 @@
-  =>  Template Name    : DOT.NET - Digital Agency Website Template
+  =>  Template Name    : DotCom - Creative Agency Website Template
 
-  =>  Template Link    : https://htmlcodex.com/digital-agency-website-template
+  =>  Template Link    : https://htmlcodex.com/creative-agency-website-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 

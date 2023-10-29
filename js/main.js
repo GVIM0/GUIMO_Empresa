@@ -33,16 +33,10 @@
     });
 
 
-    // Portfolio isotope and filter
-    var portfolioIsotope = $('.portfolio-container').isotope({
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-    });
-    $('#portfolio-flters li').on('click', function () {
-        $("#portfolio-flters li").removeClass('active');
-        $(this).addClass('active');
-
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+    // Facts counter
+    $('[data-toggle="counter-up"]').counterUp({
+        delay: 10,
+        time: 2000
     });
 
 
@@ -50,14 +44,10 @@
     $(".team-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
-        margin: 30,
-        dots: false,
+        center: true,
+        dots: true,
         loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ],
+        margin: 30,
         responsive: {
             0:{
                 items:1
@@ -78,11 +68,10 @@
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
-        margin: 30,
+        smartSpeed: 1000,
         dots: true,
         loop: true,
-        center: true,
+        margin: 30,
         responsive: {
             0:{
                 items:1
@@ -92,9 +81,6 @@
             },
             768:{
                 items:2
-            },
-            992:{
-                items:3
             }
         }
     });
