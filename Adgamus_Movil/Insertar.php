@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
         echo "Registro exitoso";
     } else {
-        echo "Error al insertar datos";
+         echo "Error al insertar datos: " . $stmt->error;
     }
 
     // Cerrar el statement
