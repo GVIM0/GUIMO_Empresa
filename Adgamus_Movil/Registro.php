@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $correo = $_GET['CorreoUsuario'];
 
     // Usar consulta preparada para evitar inyección SQL
-    $query = "SELECT * FROM usuario WHERE CorreoUsuario = ?";
+    $query = "SELECT * FROM Usuario WHERE CorreoUsuario = ?";
     $stmt = $mysql->prepare($query);
     
     // Vincular parámetros a la consulta
