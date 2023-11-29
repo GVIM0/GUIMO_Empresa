@@ -5,7 +5,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
     $contra = $_GET['Contraseña'];
 
     // Usar consultas preparadas
-    $stmt = $mysql->prepare("SELECT * FROM usuario WHERE CorreoUsuario = ? AND Contraseña = ?");
+    $stmt = $mysql->prepare("SELECT * FROM Usuario WHERE CorreoUsuario = ? AND Contraseña = ?");
     $stmt->bind_param("ss", $correo, $contra);
     $stmt->execute();
     $resultado = $stmt->get_result();
