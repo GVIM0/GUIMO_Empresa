@@ -1,8 +1,8 @@
 <?php
-$mysql = new mysqli("localhost","root","","adgamus");
+$mysql = new mysqli("localhost","root","1234","Adgamus");
     if($mysql->connect_error){
-        die("Error de conexion");
+        echo ("Error de conexion");
     } else{
-        // echo "Conexion exitosa a DB";
+        echo "Conexion exitosa a DB";
     }
-
+?>
