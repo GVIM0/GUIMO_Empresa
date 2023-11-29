@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contra = $_POST["Contraseña"];
 
     // Usar consultas preparadas para insertar datos
-    $query = "INSERT INTO usuario (CorreoUsuario, NombreUsuario, Contraseña) VALUES (?, ?, ?)";
+    $query = "INSERT INTO Usuario (CorreoUsuario, NombreUsuario, Contraseña) VALUES (?, ?, ?)";
     $stmt = $mysql->prepare($query);
 
     // Vincular los parámetros
